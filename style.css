@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    overflow: hidden;
+}
+header{
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.288);
+}
+.conteiner{
+    width: 85%;
+    margin: auto;
+}
+.h1div {
+    display: inline-block;
+    padding: 25px 0;
+}
+.h1div h1{
+    color: #fff;
+}
+.h1div span{
+    color: yellow;
+    padding: 0 10px;
+}
+header ul{
+    float: right;
+}
+header ul li{
+    list-style-type: none;
+    float: left;
+}
+header ul li a{
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 32px 15px;
+    text-transform: uppercase;
+}
+header ul li a:hover, header ul li a.current{
+    color: yellow;
+    transition: 0.5s;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+
+#particles-js{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url('../itpark.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.particles-h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    color: #fff;
+}
+
+label #open,
+label #close {
+    color: #fff;
+    font-size: 23px;
+    float: right;
+    margin: 32px 10px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}

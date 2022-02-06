@@ -1,0 +1,31 @@
+@media only screen and (max-width: 895px) 
+{   
+    .particles-h1{
+        white-space: nowrap;
+    }
+    label #open{
+        display: block;
+    }
+    header ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.877);
+        top: 88px;
+        right: -100%;
+        z-index: 1;
+        transition: all .5s ease;
+    }
+    ul li {
+         text-align: center;
+         display: block;
+    }
+    #check:checked ~ ul {
+        right: 0;
+        transition: all .5s ease;
+    }
+
+    .particles-h1{
+        clear: both;
+    }
+}
