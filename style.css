@@ -4,6 +4,10 @@
     box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+::selection {
+    background: rgb(156, 4, 4);
+    color: #fff;
+}
 body{
     overflow: hidden;
 }
@@ -21,9 +25,11 @@ header{
 }
 .h1div h1{
     color: #fff;
+    cursor: default;
+    transition: .4s;
 }
-.h1div span{
-    color: yellow;
+span{
+    color: rgb(190, 4, 4);
     padding: 0 10px;
 }
 header ul{
@@ -34,7 +40,6 @@ header ul li{
     float: left;
 }
 header ul li a{
-    position: relative;
     display: inline-block;
     color: #fff;
     text-decoration: none;
@@ -43,7 +48,7 @@ header ul li a{
     text-transform: uppercase;
 }
 header ul li a:hover, header ul li a.current{
-    color: yellow;
+    color: red;
     transition: 0.5s;
     background-color: rgba(0, 0, 0, 0.7);
 }
@@ -53,9 +58,10 @@ header ul li a:hover, header ul li a.current{
 #particles-js{
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url('../itpark.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url('picture.jpg');
     background-position: center;
     background-size: cover;
+    transition: .4s;
 }
 .particles-h1{
     position: absolute;
@@ -63,6 +69,16 @@ header ul li a:hover, header ul li a.current{
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 80px;
+    cursor: default;
+    color: #fff;
+    transition: .4s;
+}
+.name {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 20px 20px;
+    cursor: default;
     color: #fff;
 }
 
